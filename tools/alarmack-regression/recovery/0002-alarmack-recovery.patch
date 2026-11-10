@@ -1,0 +1,35 @@
+diff --git a/src/common/pf_alarm.c b/src/common/pf_alarm.c
+index 965dc99..c7895b2 100644
+--- a/src/common/pf_alarm.c
++++ b/src/common/pf_alarm.c
+@@ -1847,18 +1847,20 @@ static int pf_alarm_apmr_a_data_ind (
+                      p_apmx->exp_seq_count_o = p_apmx->exp_seq_count;
+                      p_apmx->exp_seq_count = (p_apmx->exp_seq_count + 1) &
+                                              0x7fff;
+-                     ret = pf_alarm_apmr_send_ack (net, p_apmx);
++                     /* Proposal: map a completed synchronous TACK attempt
++                      * to A_Data_cnf (IEC 61158-6-10:2019 Table 242 row 16).
++                      * That row has no confirmation-status guard. Review of
++                      * this mapping and pre-request allocation failure is
++                      * required; the latter is a separate recovery policy. */
++                     (void)pf_alarm_apmr_send_ack (net, p_apmx);
++                     p_apmx->apmr_state = PF_APMR_STATE_WCNF;
++                     ret = pf_alarm_alpmi_apmr_a_data_ind (
++                        net,
++                        p_apmx,
++                        &pnio_status); /* APMR: APMR_A_Data.ind */
+                      if (ret == 0)
+                      {
+-                        p_apmx->apmr_state = PF_APMR_STATE_WCNF;
+-                        ret = pf_alarm_alpmi_apmr_a_data_ind (
+-                           net,
+-                           p_apmx,
+-                           &pnio_status); /* APMR: APMR_A_Data.ind */
+-                        if (ret == 0)
+-                        {
+-                           p_apmx->apmr_state = PF_APMR_STATE_OPEN;
+-                        }
++                        p_apmx->apmr_state = PF_APMR_STATE_OPEN;
+                      }
+                   }
+                }

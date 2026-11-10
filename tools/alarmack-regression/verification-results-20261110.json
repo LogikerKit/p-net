@@ -1,0 +1,1111 @@
+{
+  "date": "2026-11-10",
+  "profile": "Supported standalone Linux debug overlay; cached source/build inputs. No hosted CI or hardware. UBSan startup failure from November 9 remains unresolved.",
+  "redaction": "Machine paths and command arguments omitted. Results and artifact hashes copied from local driver receipts.",
+  "results": [
+    {
+      "label": "publication-baseline-20261110",
+      "started": "2026-11-10T13:31:53.425Z",
+      "status": "EXPECTED_MODEL_COUNTEREXAMPLE",
+      "scope": "parser",
+      "expectedCounterexample": true,
+      "pins": {
+        "pnet": "19782d52c56640526156f8db04efe93317f9c530",
+        "pnal": "3e650720850e1f31f8a419c8aa135a2e81b44ddb",
+        "osal": "88784fcfff7a1b74e20bdeb71a55c2cdd22b4a59",
+        "gtest": "25808659d317cb03409e7949914b274e10e6824f"
+      },
+      "coreFileSha256": "ed273986cbd8640ed1105f34d6807f5715cc4062446681300eb837efa897cfea",
+      "hashes": {
+        "Common.lean": "0d0a92618f6c2b1be3d17e3e564e6194556ba0855d52e72e61087da200efb18f",
+        "Parser.lean": "4bb8e0c11017dc9b8ecb22e6c013efdfa4cd08f1e61e44094119a1cf8701b3df",
+        "Recovery.lean": "cb72bfbb71fa6d4699d8a5f89f0511c14b5e87f4dba248d2a486a7d89b97d870",
+        "Emit.lean": "a6df45b96cbdef96be7ecc838e67d22f5628393d6ff0e29de18acef373e6b83d",
+        "bridge.mjs": "0472a9a3696d1aa5d6b7dbc98611a7db10aabb31f84ffaa55c23aa1b34868b72",
+        "bridge.test.mjs": "4520e4e1cbeb91016ee9ceb4b0ebeb9bf91ee4f1e69d8291953eebade8812e16",
+        "verify.mjs": "e7148f9894b78dff26df4a17b01303b9ab1b9e33c8db5cbd43ddc24f6b78da83",
+        "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "lakefile.lean": "1dc544f36a9d1bf071cf57deb65df846cfc29cf2e2b2d913e25da9096cfb6daf",
+        "harness/CMakeLists.txt": "fac97d2cdec8a2c55099e02650d13fb154e5599a44cbed7ab13d4236f98822f0",
+        "harness/alarmack_fixture.h": "e70f9ad2fe5b46e56af79529e61bd66cf0bcee753422a8a44e415942525a8a67",
+        "harness/alarmack_fixture.cpp": "91364c16b31beddd1f3216739a46485be25e204b8fcee9d9c7410a1d5e846687",
+        "harness/test_alarmack_parser.cpp": "f85a4df1b786d319010106ede038ca3ff025eae147b704dfb74302a2f287eb45",
+        "harness/test_alarmack_recovery.cpp": "a3772a685d1e75b57aed6159a159ebefc624be7b5016e2f54f5d05a9096ebba4",
+        "parser_cases.h": "224f43f60a8f0ad8fa36e7c6611fd84d912bc4e17c840c5242b268b2d4babb9f",
+        "recovery_cases.h": "d8c9a1e65b3adc99a541baec2f028e310966ac95eec555ffd5436aba98a89153",
+        "binary": "a09d05dedaf71ac2d544ab136b39a3c07d8ccb47acce8affdb669f42ffcf5888"
+      },
+      "startupFrames": {
+        "connect_req": {
+          "bytes": 470,
+          "sha256": "048d3f9f31d4d22c965fd5d9bf531a835f132710f519f34ea43d3c68d48e48c4"
+        },
+        "write_req": {
+          "bytes": 168,
+          "sha256": "ef6fc745d39745c5ea943b38db23641a80710ec1f01513d40c1071fe2d4a72a0"
+        },
+        "prm_end_req": {
+          "bytes": 132,
+          "sha256": "1bf9d587535fb6b5b6182cad087a9ed3daad4a4185934bc039230c56e730b8a0"
+        },
+        "appl_rdy_rsp": {
+          "bytes": 132,
+          "sha256": "c3995eef147a5c2600d2dcdb9e8273bb93acb39aa30689f38e3cbfa829eac916"
+        },
+        "data_packet": {
+          "bytes": 60,
+          "sha256": "72bf38b52ae6ac40d8ebff70343ca63170e29ce03ddc13e650361d89a75ebe68"
+        }
+      },
+      "phases": [
+        {
+          "name": "pnet-revision",
+          "seconds": 0.008383519000000002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-diff",
+          "seconds": 0.03770439700000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-files",
+          "seconds": 0.004886181999999991,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-revision",
+          "seconds": 0.0039649990000000055,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-diff",
+          "seconds": 0.04043678200000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-files",
+          "seconds": 0.004034846999999985,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-revision",
+          "seconds": 0.004460644999999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-diff",
+          "seconds": 0.005502828000000022,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-files",
+          "seconds": 0.002808481999999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-revision",
+          "seconds": 0.004085758999999996,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-diff",
+          "seconds": 0.012598793,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-files",
+          "seconds": 0.004820005000000009,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "lean-version",
+          "seconds": 0.03356957299999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Common",
+          "seconds": 0.5709401359999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Parser",
+          "seconds": 3.8464634299999996,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Recovery",
+          "seconds": 0.8585846069999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-json",
+          "seconds": 0.47168661499999964,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-header",
+          "seconds": 0.4829618410000003,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-json",
+          "seconds": 0.5063342920000005,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-header",
+          "seconds": 0.4779725399999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "false-certificate-control",
+          "seconds": 0.4149210320000002,
+          "exitCode": 1,
+          "signal": null
+        },
+        {
+          "name": "bridge-controls",
+          "seconds": 0.04166802400000051,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "configure",
+          "seconds": 0.04764569199999914,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "build",
+          "seconds": 2.945412786,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-native",
+          "seconds": 0.31145616300000073,
+          "exitCode": 1,
+          "signal": null
+        }
+      ],
+      "native": {
+        "parser": {
+          "histories": 288,
+          "failingHistories": 288,
+          "differingObservations": 1388,
+          "exitCode": 1
+        }
+      },
+      "seconds": 11.266393912
+    },
+    {
+      "label": "publication-parser-20261110",
+      "started": "2026-11-10T13:30:49.217Z",
+      "status": "PASS",
+      "scope": "parser",
+      "expectedCounterexample": false,
+      "pins": {
+        "pnet": "19782d52c56640526156f8db04efe93317f9c530",
+        "pnal": "3e650720850e1f31f8a419c8aa135a2e81b44ddb",
+        "osal": "88784fcfff7a1b74e20bdeb71a55c2cdd22b4a59",
+        "gtest": "25808659d317cb03409e7949914b274e10e6824f"
+      },
+      "coreFileSha256": "af6fc439f483c3a72bdb78ef4e0fa1f96fa91260589dcc8febe0797377cdb02f",
+      "hashes": {
+        "Common.lean": "0d0a92618f6c2b1be3d17e3e564e6194556ba0855d52e72e61087da200efb18f",
+        "Parser.lean": "4bb8e0c11017dc9b8ecb22e6c013efdfa4cd08f1e61e44094119a1cf8701b3df",
+        "Recovery.lean": "cb72bfbb71fa6d4699d8a5f89f0511c14b5e87f4dba248d2a486a7d89b97d870",
+        "Emit.lean": "a6df45b96cbdef96be7ecc838e67d22f5628393d6ff0e29de18acef373e6b83d",
+        "bridge.mjs": "0472a9a3696d1aa5d6b7dbc98611a7db10aabb31f84ffaa55c23aa1b34868b72",
+        "bridge.test.mjs": "4520e4e1cbeb91016ee9ceb4b0ebeb9bf91ee4f1e69d8291953eebade8812e16",
+        "verify.mjs": "e7148f9894b78dff26df4a17b01303b9ab1b9e33c8db5cbd43ddc24f6b78da83",
+        "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "lakefile.lean": "1dc544f36a9d1bf071cf57deb65df846cfc29cf2e2b2d913e25da9096cfb6daf",
+        "harness/CMakeLists.txt": "fac97d2cdec8a2c55099e02650d13fb154e5599a44cbed7ab13d4236f98822f0",
+        "harness/alarmack_fixture.h": "e70f9ad2fe5b46e56af79529e61bd66cf0bcee753422a8a44e415942525a8a67",
+        "harness/alarmack_fixture.cpp": "91364c16b31beddd1f3216739a46485be25e204b8fcee9d9c7410a1d5e846687",
+        "harness/test_alarmack_parser.cpp": "f85a4df1b786d319010106ede038ca3ff025eae147b704dfb74302a2f287eb45",
+        "harness/test_alarmack_recovery.cpp": "a3772a685d1e75b57aed6159a159ebefc624be7b5016e2f54f5d05a9096ebba4",
+        "parser_cases.h": "224f43f60a8f0ad8fa36e7c6611fd84d912bc4e17c840c5242b268b2d4babb9f",
+        "recovery_cases.h": "d8c9a1e65b3adc99a541baec2f028e310966ac95eec555ffd5436aba98a89153",
+        "binary": "6f6cef48ea4d7b4d6e3e251e4a5caa0bf070b037a78b8f3dee48683cc57dc6b7"
+      },
+      "startupFrames": {
+        "connect_req": {
+          "bytes": 470,
+          "sha256": "048d3f9f31d4d22c965fd5d9bf531a835f132710f519f34ea43d3c68d48e48c4"
+        },
+        "write_req": {
+          "bytes": 168,
+          "sha256": "ef6fc745d39745c5ea943b38db23641a80710ec1f01513d40c1071fe2d4a72a0"
+        },
+        "prm_end_req": {
+          "bytes": 132,
+          "sha256": "1bf9d587535fb6b5b6182cad087a9ed3daad4a4185934bc039230c56e730b8a0"
+        },
+        "appl_rdy_rsp": {
+          "bytes": 132,
+          "sha256": "c3995eef147a5c2600d2dcdb9e8273bb93acb39aa30689f38e3cbfa829eac916"
+        },
+        "data_packet": {
+          "bytes": 60,
+          "sha256": "72bf38b52ae6ac40d8ebff70343ca63170e29ce03ddc13e650361d89a75ebe68"
+        }
+      },
+      "phases": [
+        {
+          "name": "pnet-revision",
+          "seconds": 0.007187493000000003,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-diff",
+          "seconds": 0.005145349000000003,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-files",
+          "seconds": 0.004287259999999996,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-revision",
+          "seconds": 0.004635920999999996,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-diff",
+          "seconds": 0.0511447,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-files",
+          "seconds": 0.004833221000000009,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-revision",
+          "seconds": 0.004756866000000002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-diff",
+          "seconds": 0.011689986999999973,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-files",
+          "seconds": 0.004723753000000016,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-revision",
+          "seconds": 0.004598687999999982,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-diff",
+          "seconds": 0.03686623900000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-files",
+          "seconds": 0.004526576000000006,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "lean-version",
+          "seconds": 0.156713216,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Common",
+          "seconds": 2.0372584419999997,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Parser",
+          "seconds": 4.262438459,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Recovery",
+          "seconds": 1.0013114860000005,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-json",
+          "seconds": 0.49817666799999916,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-header",
+          "seconds": 0.49879379700000026,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-json",
+          "seconds": 0.545262525,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-header",
+          "seconds": 0.48143140400000084,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "false-certificate-control",
+          "seconds": 0.38039411800000017,
+          "exitCode": 1,
+          "signal": null
+        },
+        {
+          "name": "bridge-controls",
+          "seconds": 0.02740091200000097,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "configure",
+          "seconds": 0.06052749199999925,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "build",
+          "seconds": 3.071211519999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-native",
+          "seconds": 0.31274044199999845,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "native": {
+        "parser": {
+          "histories": 288,
+          "failingHistories": 0,
+          "differingObservations": 0,
+          "exitCode": 0
+        }
+      },
+      "seconds": 13.629620045000001
+    },
+    {
+      "label": "publication-parser-only-recovery-20261110",
+      "started": "2026-11-10T13:31:53.425Z",
+      "status": "EXPECTED_MODEL_COUNTEREXAMPLE",
+      "scope": "recovery",
+      "expectedCounterexample": true,
+      "pins": {
+        "pnet": "19782d52c56640526156f8db04efe93317f9c530",
+        "pnal": "3e650720850e1f31f8a419c8aa135a2e81b44ddb",
+        "osal": "88784fcfff7a1b74e20bdeb71a55c2cdd22b4a59",
+        "gtest": "25808659d317cb03409e7949914b274e10e6824f"
+      },
+      "coreFileSha256": "af6fc439f483c3a72bdb78ef4e0fa1f96fa91260589dcc8febe0797377cdb02f",
+      "hashes": {
+        "Common.lean": "0d0a92618f6c2b1be3d17e3e564e6194556ba0855d52e72e61087da200efb18f",
+        "Parser.lean": "4bb8e0c11017dc9b8ecb22e6c013efdfa4cd08f1e61e44094119a1cf8701b3df",
+        "Recovery.lean": "cb72bfbb71fa6d4699d8a5f89f0511c14b5e87f4dba248d2a486a7d89b97d870",
+        "Emit.lean": "a6df45b96cbdef96be7ecc838e67d22f5628393d6ff0e29de18acef373e6b83d",
+        "bridge.mjs": "0472a9a3696d1aa5d6b7dbc98611a7db10aabb31f84ffaa55c23aa1b34868b72",
+        "bridge.test.mjs": "4520e4e1cbeb91016ee9ceb4b0ebeb9bf91ee4f1e69d8291953eebade8812e16",
+        "verify.mjs": "e7148f9894b78dff26df4a17b01303b9ab1b9e33c8db5cbd43ddc24f6b78da83",
+        "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "lakefile.lean": "1dc544f36a9d1bf071cf57deb65df846cfc29cf2e2b2d913e25da9096cfb6daf",
+        "harness/CMakeLists.txt": "fac97d2cdec8a2c55099e02650d13fb154e5599a44cbed7ab13d4236f98822f0",
+        "harness/alarmack_fixture.h": "e70f9ad2fe5b46e56af79529e61bd66cf0bcee753422a8a44e415942525a8a67",
+        "harness/alarmack_fixture.cpp": "91364c16b31beddd1f3216739a46485be25e204b8fcee9d9c7410a1d5e846687",
+        "harness/test_alarmack_parser.cpp": "f85a4df1b786d319010106ede038ca3ff025eae147b704dfb74302a2f287eb45",
+        "harness/test_alarmack_recovery.cpp": "a3772a685d1e75b57aed6159a159ebefc624be7b5016e2f54f5d05a9096ebba4",
+        "parser_cases.h": "224f43f60a8f0ad8fa36e7c6611fd84d912bc4e17c840c5242b268b2d4babb9f",
+        "recovery_cases.h": "d8c9a1e65b3adc99a541baec2f028e310966ac95eec555ffd5436aba98a89153",
+        "binary": "8f200320c31c3bf9f21598edf2bf4d5e89a4fd4054f4d8636a3af533aff6c7a1"
+      },
+      "startupFrames": {
+        "connect_req": {
+          "bytes": 470,
+          "sha256": "048d3f9f31d4d22c965fd5d9bf531a835f132710f519f34ea43d3c68d48e48c4"
+        },
+        "write_req": {
+          "bytes": 168,
+          "sha256": "ef6fc745d39745c5ea943b38db23641a80710ec1f01513d40c1071fe2d4a72a0"
+        },
+        "prm_end_req": {
+          "bytes": 132,
+          "sha256": "1bf9d587535fb6b5b6182cad087a9ed3daad4a4185934bc039230c56e730b8a0"
+        },
+        "appl_rdy_rsp": {
+          "bytes": 132,
+          "sha256": "c3995eef147a5c2600d2dcdb9e8273bb93acb39aa30689f38e3cbfa829eac916"
+        },
+        "data_packet": {
+          "bytes": 60,
+          "sha256": "72bf38b52ae6ac40d8ebff70343ca63170e29ce03ddc13e650361d89a75ebe68"
+        }
+      },
+      "phases": [
+        {
+          "name": "pnet-revision",
+          "seconds": 0.009774816000000006,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-diff",
+          "seconds": 0.005117076000000004,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-files",
+          "seconds": 0.003991337000000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-revision",
+          "seconds": 0.0034162330000000055,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-diff",
+          "seconds": 0.02962104599999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-files",
+          "seconds": 0.003946376999999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-revision",
+          "seconds": 0.0043197320000000015,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-diff",
+          "seconds": 0.008451549999999997,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-files",
+          "seconds": 0.004920102000000014,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-revision",
+          "seconds": 0.005009871000000004,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-diff",
+          "seconds": 0.012674759000000023,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-files",
+          "seconds": 0.0030898379999999863,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "lean-version",
+          "seconds": 0.031166603000000008,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Common",
+          "seconds": 0.469500912,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Parser",
+          "seconds": 3.6711325669999995,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Recovery",
+          "seconds": 0.8779883880000007,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-json",
+          "seconds": 0.4547770900000005,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-header",
+          "seconds": 0.48985781100000075,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-json",
+          "seconds": 0.46089247800000066,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-header",
+          "seconds": 0.5804931010000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "false-certificate-control",
+          "seconds": 0.4326999679999999,
+          "exitCode": 1,
+          "signal": null
+        },
+        {
+          "name": "bridge-controls",
+          "seconds": 0.025049130000000332,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "configure",
+          "seconds": 0.043550897000000074,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "build",
+          "seconds": 2.9626422539999995,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-native",
+          "seconds": 0.05965505699999994,
+          "exitCode": 1,
+          "signal": null
+        }
+      ],
+      "native": {
+        "recovery": {
+          "histories": 36,
+          "failingHistories": 24,
+          "differingObservations": 116,
+          "exitCode": 1
+        }
+      },
+      "seconds": 10.776273717
+    },
+    {
+      "label": "publication-combined-20261110",
+      "started": "2026-11-10T13:30:49.261Z",
+      "status": "PASS",
+      "scope": "both",
+      "expectedCounterexample": false,
+      "pins": {
+        "pnet": "19782d52c56640526156f8db04efe93317f9c530",
+        "pnal": "3e650720850e1f31f8a419c8aa135a2e81b44ddb",
+        "osal": "88784fcfff7a1b74e20bdeb71a55c2cdd22b4a59",
+        "gtest": "25808659d317cb03409e7949914b274e10e6824f"
+      },
+      "coreFileSha256": "aa9f295afc978b468d6fc9b563dc5a0fbcb707ab8f615b027165fad48b50d1e7",
+      "hashes": {
+        "Common.lean": "0d0a92618f6c2b1be3d17e3e564e6194556ba0855d52e72e61087da200efb18f",
+        "Parser.lean": "4bb8e0c11017dc9b8ecb22e6c013efdfa4cd08f1e61e44094119a1cf8701b3df",
+        "Recovery.lean": "cb72bfbb71fa6d4699d8a5f89f0511c14b5e87f4dba248d2a486a7d89b97d870",
+        "Emit.lean": "a6df45b96cbdef96be7ecc838e67d22f5628393d6ff0e29de18acef373e6b83d",
+        "bridge.mjs": "0472a9a3696d1aa5d6b7dbc98611a7db10aabb31f84ffaa55c23aa1b34868b72",
+        "bridge.test.mjs": "4520e4e1cbeb91016ee9ceb4b0ebeb9bf91ee4f1e69d8291953eebade8812e16",
+        "verify.mjs": "e7148f9894b78dff26df4a17b01303b9ab1b9e33c8db5cbd43ddc24f6b78da83",
+        "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "lakefile.lean": "1dc544f36a9d1bf071cf57deb65df846cfc29cf2e2b2d913e25da9096cfb6daf",
+        "harness/CMakeLists.txt": "fac97d2cdec8a2c55099e02650d13fb154e5599a44cbed7ab13d4236f98822f0",
+        "harness/alarmack_fixture.h": "e70f9ad2fe5b46e56af79529e61bd66cf0bcee753422a8a44e415942525a8a67",
+        "harness/alarmack_fixture.cpp": "91364c16b31beddd1f3216739a46485be25e204b8fcee9d9c7410a1d5e846687",
+        "harness/test_alarmack_parser.cpp": "f85a4df1b786d319010106ede038ca3ff025eae147b704dfb74302a2f287eb45",
+        "harness/test_alarmack_recovery.cpp": "a3772a685d1e75b57aed6159a159ebefc624be7b5016e2f54f5d05a9096ebba4",
+        "parser_cases.h": "224f43f60a8f0ad8fa36e7c6611fd84d912bc4e17c840c5242b268b2d4babb9f",
+        "recovery_cases.h": "d8c9a1e65b3adc99a541baec2f028e310966ac95eec555ffd5436aba98a89153",
+        "binary": "d75576c65f1b306ae7617deb5182daa5de3484b97466fcf77df7005450e15003"
+      },
+      "startupFrames": {
+        "connect_req": {
+          "bytes": 470,
+          "sha256": "048d3f9f31d4d22c965fd5d9bf531a835f132710f519f34ea43d3c68d48e48c4"
+        },
+        "write_req": {
+          "bytes": 168,
+          "sha256": "ef6fc745d39745c5ea943b38db23641a80710ec1f01513d40c1071fe2d4a72a0"
+        },
+        "prm_end_req": {
+          "bytes": 132,
+          "sha256": "1bf9d587535fb6b5b6182cad087a9ed3daad4a4185934bc039230c56e730b8a0"
+        },
+        "appl_rdy_rsp": {
+          "bytes": 132,
+          "sha256": "c3995eef147a5c2600d2dcdb9e8273bb93acb39aa30689f38e3cbfa829eac916"
+        },
+        "data_packet": {
+          "bytes": 60,
+          "sha256": "72bf38b52ae6ac40d8ebff70343ca63170e29ce03ddc13e650361d89a75ebe68"
+        }
+      },
+      "phases": [
+        {
+          "name": "pnet-revision",
+          "seconds": 0.010131977000000002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-diff",
+          "seconds": 0.02530348299999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-files",
+          "seconds": 0.00353169299999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-revision",
+          "seconds": 0.004803967,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-diff",
+          "seconds": 0.051999194999999984,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-files",
+          "seconds": 0.0038834919999999897,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-revision",
+          "seconds": 0.005081951000000004,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-diff",
+          "seconds": 0.019006845999999997,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-files",
+          "seconds": 0.00349487000000002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-revision",
+          "seconds": 0.005069346999999993,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-diff",
+          "seconds": 0.03585097999999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-files",
+          "seconds": 0.004092192000000011,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "lean-version",
+          "seconds": 0.10311550799999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Common",
+          "seconds": 2.036328988,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Parser",
+          "seconds": 4.264079756000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Recovery",
+          "seconds": 1.0920167609999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-json",
+          "seconds": 0.48660237099999903,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-header",
+          "seconds": 0.5355668769999993,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-json",
+          "seconds": 0.5753559459999997,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-header",
+          "seconds": 0.5625092409999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "false-certificate-control",
+          "seconds": 0.38284026399999854,
+          "exitCode": 1,
+          "signal": null
+        },
+        {
+          "name": "bridge-controls",
+          "seconds": 0.024278948999999557,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "configure",
+          "seconds": 0.0397862669999995,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "build",
+          "seconds": 2.7526776800000006,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-native",
+          "seconds": 0.4355819500000016,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-native",
+          "seconds": 0.046918447000000016,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "native": {
+        "parser": {
+          "histories": 288,
+          "failingHistories": 0,
+          "differingObservations": 0,
+          "exitCode": 0
+        },
+        "recovery": {
+          "histories": 36,
+          "failingHistories": 0,
+          "differingObservations": 0,
+          "exitCode": 0
+        }
+      },
+      "seconds": 13.64911376
+    },
+    {
+      "label": "publication-clean-bundle-20261110",
+      "started": "2026-11-10T13:35:14.613Z",
+      "status": "PASS",
+      "scope": "both",
+      "expectedCounterexample": false,
+      "pins": {
+        "pnet": "19782d52c56640526156f8db04efe93317f9c530",
+        "pnal": "3e650720850e1f31f8a419c8aa135a2e81b44ddb",
+        "osal": "88784fcfff7a1b74e20bdeb71a55c2cdd22b4a59",
+        "gtest": "25808659d317cb03409e7949914b274e10e6824f"
+      },
+      "coreFileSha256": "aa9f295afc978b468d6fc9b563dc5a0fbcb707ab8f615b027165fad48b50d1e7",
+      "hashes": {
+        "Common.lean": "0d0a92618f6c2b1be3d17e3e564e6194556ba0855d52e72e61087da200efb18f",
+        "Parser.lean": "4bb8e0c11017dc9b8ecb22e6c013efdfa4cd08f1e61e44094119a1cf8701b3df",
+        "Recovery.lean": "cb72bfbb71fa6d4699d8a5f89f0511c14b5e87f4dba248d2a486a7d89b97d870",
+        "Emit.lean": "a6df45b96cbdef96be7ecc838e67d22f5628393d6ff0e29de18acef373e6b83d",
+        "bridge.mjs": "0472a9a3696d1aa5d6b7dbc98611a7db10aabb31f84ffaa55c23aa1b34868b72",
+        "bridge.test.mjs": "4520e4e1cbeb91016ee9ceb4b0ebeb9bf91ee4f1e69d8291953eebade8812e16",
+        "verify.mjs": "e7148f9894b78dff26df4a17b01303b9ab1b9e33c8db5cbd43ddc24f6b78da83",
+        "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+        "lakefile.lean": "1dc544f36a9d1bf071cf57deb65df846cfc29cf2e2b2d913e25da9096cfb6daf",
+        "harness/CMakeLists.txt": "fac97d2cdec8a2c55099e02650d13fb154e5599a44cbed7ab13d4236f98822f0",
+        "harness/alarmack_fixture.h": "e70f9ad2fe5b46e56af79529e61bd66cf0bcee753422a8a44e415942525a8a67",
+        "harness/alarmack_fixture.cpp": "91364c16b31beddd1f3216739a46485be25e204b8fcee9d9c7410a1d5e846687",
+        "harness/test_alarmack_parser.cpp": "f85a4df1b786d319010106ede038ca3ff025eae147b704dfb74302a2f287eb45",
+        "harness/test_alarmack_recovery.cpp": "a3772a685d1e75b57aed6159a159ebefc624be7b5016e2f54f5d05a9096ebba4",
+        "parser_cases.h": "224f43f60a8f0ad8fa36e7c6611fd84d912bc4e17c840c5242b268b2d4babb9f",
+        "recovery_cases.h": "d8c9a1e65b3adc99a541baec2f028e310966ac95eec555ffd5436aba98a89153",
+        "binary": "2e0b7b58aec399c48bcd1fd6a16c65fb66b359755f019b4b34239bd492be947c"
+      },
+      "startupFrames": {
+        "connect_req": {
+          "bytes": 470,
+          "sha256": "048d3f9f31d4d22c965fd5d9bf531a835f132710f519f34ea43d3c68d48e48c4"
+        },
+        "write_req": {
+          "bytes": 168,
+          "sha256": "ef6fc745d39745c5ea943b38db23641a80710ec1f01513d40c1071fe2d4a72a0"
+        },
+        "prm_end_req": {
+          "bytes": 132,
+          "sha256": "1bf9d587535fb6b5b6182cad087a9ed3daad4a4185934bc039230c56e730b8a0"
+        },
+        "appl_rdy_rsp": {
+          "bytes": 132,
+          "sha256": "c3995eef147a5c2600d2dcdb9e8273bb93acb39aa30689f38e3cbfa829eac916"
+        },
+        "data_packet": {
+          "bytes": 60,
+          "sha256": "72bf38b52ae6ac40d8ebff70343ca63170e29ce03ddc13e650361d89a75ebe68"
+        }
+      },
+      "phases": [
+        {
+          "name": "pnet-revision",
+          "seconds": 0.007747204000000003,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-diff",
+          "seconds": 0.028827776,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnet-files",
+          "seconds": 0.004034346000000013,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-revision",
+          "seconds": 0.0043517970000000045,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-diff",
+          "seconds": 0.042194701999999994,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "pnal-files",
+          "seconds": 0.005624178999999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-revision",
+          "seconds": 0.00419771399999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-diff",
+          "seconds": 0.009732819000000007,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "osal-files",
+          "seconds": 0.005243774999999999,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-revision",
+          "seconds": 0.004200997999999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-diff",
+          "seconds": 0.02531384699999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "gtest-files",
+          "seconds": 0.003931062999999995,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "lean-version",
+          "seconds": 0.03874794800000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Common",
+          "seconds": 0.6577127660000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Parser",
+          "seconds": 3.4919885380000006,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "proof-Recovery",
+          "seconds": 0.8546478230000002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-json",
+          "seconds": 0.48776473700000045,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-header",
+          "seconds": 0.4851464820000001,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-json",
+          "seconds": 0.4575732509999998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-header",
+          "seconds": 0.4708837349999994,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "false-certificate-control",
+          "seconds": 0.38150933199999965,
+          "exitCode": 1,
+          "signal": null
+        },
+        {
+          "name": "bridge-controls",
+          "seconds": 0.028855939999999462,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "configure",
+          "seconds": 0.5603300849999996,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "build",
+          "seconds": 3.3816229489999987,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "parser-native",
+          "seconds": 0.37381400700000084,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "name": "recovery-native",
+          "seconds": 0.05120589699999982,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "native": {
+        "parser": {
+          "histories": 288,
+          "failingHistories": 0,
+          "differingObservations": 0,
+          "exitCode": 0
+        },
+        "recovery": {
+          "histories": 36,
+          "failingHistories": 0,
+          "differingObservations": 0,
+          "exitCode": 0
+        }
+      },
+      "seconds": 11.982000223000002
+    }
+  ]
+}

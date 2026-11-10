@@ -1,0 +1,8 @@
+{
+  "base": "19782d52c56640526156f8db04efe93317f9c530",
+  "parserSourceSha256": "af6fc439f483c3a72bdb78ef4e0fa1f96fa91260589dcc8febe0797377cdb02f",
+  "combinedSourceSha256": "aa9f295afc978b468d6fc9b563dc5a0fbcb707ab8f615b027165fad48b50d1e7",
+  "parserPatchSha256": "828b3385d0a58432826e4f9ccf0dbc0c6096c86075a0202fa3ae0e63e73c0619",
+  "recoveryPatchSha256": "20d52924db811aa0003eadf2c3b14c8b59aa3c7306c259eca9555cc67b906063",
+  "dependency": "Apply parser patch first; recovery is an incremental diff over it."
+}

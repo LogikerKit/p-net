@@ -1,0 +1,5 @@
+inputs/
+build*/
+evidence/
+companion/.lake/
+companion/*.olean
